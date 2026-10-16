@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Crisis de la Extinción - Proyecto de Investigación</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f7f4;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d2818, #1b4332);
+            color: #ffffff;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #d8f3dc;
+        }
+
+        nav {
+            background-color: #2d6a4f;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 3px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #b7e4c7;
+            border-bottom: 2px solid #b7e4c7;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 25px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 5px solid #52b788;
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        article {
+            background: #ffffff;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        article:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e9f5ec;
+            padding-bottom: 8px;
+        }
+
+        .stat-box {
+            background: #e8f5e9;
+            border-left: 5px solid #40916c;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #1b4332;
+            display: block;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #2d6a4f;
+            color: #ffffff;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .species-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .species-card {
+            background: #f8fbf9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #d8f3dc;
+        }
+
+        .species-card h4 {
+            color: #2d6a4f;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background: #0d2818;
+            color: #b7e4c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚨 La Crisis de la Extinción</h1>
+        <p>Investigación sobre la pérdida acelerada de biodiversidad y el impacto devastador de la actividad humana en los ecosistemas globales.</p>
+    </header>
+
+    <nav>
+        <a href="pagina principal.html">Inicio</a>
+        <a href="Justificacion.html">Justificacion</a>
+        <a href="crisis de extincion.html" class="active">Marco Teorico</a>
+        <a href="reciclaje.html">Marco Conceptual</a> 
+        <a href="tips para ayudar.html">¿Cómo Ayudar?</a>  
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Datos y Estadísticas de Alerta Mundial</h2>
+                <p>La Tierra enfrenta una pérdida masiva de especies sin precedentes en la historia reciente de la humanidad.</p>
+                <div class="stat-box">
+                    <span class="stat-number">+40,000 Especies</span>
+                    <p>Se encuentran en peligro crítico de extinción según los registros de la Lista Roja de la UICN.</p>
+                </div>
+                <p>Esta cifra alarmante refleja cómo la aceleración del cambio climático y la degradación ambiental están alterando de forma permanente la biosfera.</p>
+                <span class="tag">Diagnóstico Ambiental</span>
+            </article>
+
+            <article>
+                <h2>Principales Factores de Amenaza</h2>
+                <p>Las actividades antrópicas son la causa primaria detrás de la crisis actual:</p>
+                <ul>
+                    <li><strong>Pérdida y fragmentación de hábitat:</strong> Deforestación desmedida para urbanización y agricultura intensiva.</li>
+                    <li><strong>Aceleración del cambio climático:</strong> Variaciones extremas de temperatura que impiden los ciclos naturales de adaptación.</li>
+                    <li><strong>Tráfico ilegal de fauna:</strong> Explotación comercial y caza furtiva de especies protegidas.</li>
+                    <li><strong>Acumulación masiva de residuos:</strong> Contaminación por plásticos y químicos que destruyen ecosistemas terrestres y marinos.</li>
+                </ul>
+                <span class="tag">Causas Directas</span>
+            </article>
+
+            <article>
+                <h2>Especies Emblemáticas en Peligro Extremadamente Alto</h2>
+                <p>Estudios de caso representativos dentro del proyecto de investigación:</p>
+                <div class="species-list">
+                    <div class="species-card">
+                        <h4>🐻‍❄️ Oso Polar</h4>
+                        <p>Afectado por la reducción acelerada de las capas de hielo en el Ártico.</p>
+                    </div>
+                    <div class="species-card">
+                        <h4>🦏 Rinoceronte Blanco</h4>
+                        <p>Llevado al borde del colapso por la caza furtiva ilegal de sus cuernos.</p>
+                    </div>
+                    <div class="species-card">
+                        <h4>🐢 Tortuga Marina</h4>
+                        <p>Amenazada en todos sus ciclos de vida por ingesta de residuos de plástico.</p>
+                    </div>
+                </div>
+                <span class="tag">Fichas de Análisis</span>
+            </article>
+        </main>
+
+        <aside>
+            <h3>📊 Indicador de Impacto</h3>
+            <p>Se calcula que la tasa de extinción actual es hasta <strong>1,000 veces mayor</strong> que el ritmo natural. Integrar estrategias de reciclaje y preservación es vital para revertir este indicador.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Proyecto de Investigación: Regeneración de Vida Animal y Reciclaje.</p>
+    </footer>
+
+</body>
+</html>

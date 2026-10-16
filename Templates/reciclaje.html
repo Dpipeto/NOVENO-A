@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclaje y Conservación de Fauna</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f7f4;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1b4332, #2d6a4f);
+            color: #ffffff;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #d8f3dc;
+        }
+
+        nav {
+            background-color: #2d6a4f;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 3px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #b7e4c7;
+            border-bottom: 2px solid #b7e4c7;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 25px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 5px solid #52b788;
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        article {
+            background: #ffffff;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        article:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e9f5ec;
+            padding-bottom: 8px;
+        }
+
+        .highlight-card {
+            background: #f0fff4;
+            border: 1px solid #c6f6d5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #2d6a4f;
+            color: #ffffff;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background: #0d2818;
+            color: #b7e4c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>♻️ El Vínculo: Reciclaje y Conservación Animal</h1>
+        <p>Análisis sobre cómo el procesamiento responsable de residuos previene la destrucción de hábitats y salva vidas silvestres.</p>
+    </header>
+
+    <nav>
+        <a href="pagina principal.html">Inicio</a>
+        <a href="Justificacion.html">Justificacion</a>
+        <a href="crisis de extincion.html">Marco Teorico</a>
+        <a href="reciclaje.html" class="active">Marco Conceptual</a> 
+        <a href="tips para ayudar.html">¿Cómo Ayudar?</a>  
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>1. Invasión de Plásticos en los Océanos y Redes Fantasma</h2>
+                <p>Millones de tonaledas de residuos llegan a los mares anualmente. Especies como tortugas, mamíferos marinos y aves consumen microplásticos o sufren atrapamientos mortales en <em>redes de pesca abandonadas</em>.</p>
+                <div class="highlight-card">
+                    <p><strong>Impacto Directo:</strong> El reciclaje efectivo frena la llegada de insumos sintéticos al medio marino, reduciendo los índices de asfixia y envenenamiento animal.</p>
+                </div>
+                <span class="tag">Biodiversidad Marina</span>
+            </article>
+
+            <article>
+                <h2>2. Preservación de Hábitats Terrestres y Recursos Naturales</h2>
+                <p>La extracción de materia prima virgen implica tala indiscriminada y minería destructiva en selvas y bosques primarios.</p>
+                <ul>
+                    <li><strong>Reciclaje de Papel/Cartón:</strong> Salva bosques nativos que albergan especies clave como felinos y aves exóticas.</li>
+                    <li><strong>Reciclaje de Metales/Electrónicos:</strong> Disminuye la contaminación de ríos y fuentes hídricas por metales pesados.</li>
+                </ul>
+                <span class="tag">Protección de Bosques</span>
+            </article>
+
+            <article>
+                <h2>3. Mitigación del Calentamiento Global</h2>
+                <p>Fabricar materiales mediante recursos reciclados requiere sustancialmente menos energía que producirlos desde cero, reduciendo drásticamente las emisiones de CO₂.</p>
+                <p>Menor tasa de emisiones ayuda a estabilizar la temperatura global, protegiendo ecosistemas frágiles como los glaciares árticos y los arrecifes de coral.</p>
+                <span class="tag">Acción Climática</span>
+            </article>
+        </main>
+
+        <aside>
+            <h3>🌊 Dato de Investigación</h3>
+            <p>Se proyecta que para el año 2050 el peso del plástico acumulado en el océano superará al de la biomasa total de peces si no se aplican modelos de economía circular sostenibles.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Proyecto de Investigación: Regeneración de Vida Animal y Reciclaje.</p>
+    </footer>
+
+</body>
+</html>

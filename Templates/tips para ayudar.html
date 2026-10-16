@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acciones Ciudadanas y Soluciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f7f4;
+            color: #2b2b2b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d6a4f, #40916c);
+            color: #ffffff;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #e8f5e9;
+        }
+
+        nav {
+            background-color: #2d6a4f;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s, border-bottom 0.3s;
+            padding-bottom: 3px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #b7e4c7;
+            border-bottom: 2px solid #b7e4c7;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            gap: 25px;
+        }
+
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-top: 5px solid #52b788;
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        article {
+            background: #ffffff;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        article:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e9f5ec;
+            padding-bottom: 8px;
+        }
+
+        .grid-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .step-card {
+            background: #f8fbf9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #52b788;
+        }
+
+        .step-card h4 {
+            color: #1b4332;
+            margin-bottom: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #2d6a4f;
+            color: #ffffff;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background: #0d2818;
+            color: #b7e4c7;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛠️ Acciones Ciudadanas y Compromiso</h1>
+        <p>Estrategias prácticas de gestión ambiental y consumo responsable aplicables a la vida cotidiana.</p>
+    </header>
+
+    <nav>
+        <a href="pagina principal.html">Inicio</a>
+        <a href="Justificacion.html">Justificacion</a>
+        <a href="crisis de extincion.html">Marco Teorico</a>
+        <a href="reciclaje.html">Marco Conceptual</a> 
+        <a href="tips para ayudar.html" class="active">¿Cómo Ayudar?</a>  
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>1. Clasificación Correcta de Residuos Domésticos</h2>
+                <p>La segregación en la fuente es fundamental para garantizar que el material pueda reincorporarse a las cadenas productivas:</p>
+                <div class="grid-steps">
+                    <div class="step-card">
+                        <h4>🟢 Orgánicos</h4>
+                        <p>Residuos de alimentos y jardinería listos para compostaje.</p>
+                    </div>
+                    <div class="step-card">
+                        <h4>🔵 Papel y Cartón</h4>
+                        <p>Cajas y cuadernos limpios y secos para su procesamiento.</p>
+                    </div>
+                    <div class="step-card">
+                        <h4>🟡 Plásticos y Envases</h4>
+                        <p>Botellas PET y latas metálicas previamente enjuagadas.</p>
+                    </div>
+                </div>
+                <span class="tag">Separación de Residuos</span>
+            </article>
+
+            <article>
+                <h2>2. Aplicación Completa del Principio de las 3R</h2>
+                <p>Optimización del ciclo de vida de los insumos de consumo habitual:</p>
+                <ul>
+                    <li><strong>Reducir:</strong> Minimizar el uso de plásticos de un solo uso y embalajes innecesarios.</li>
+                    <li><strong>Reutilizar:</strong> Dar una segunda vida útil a contenedores de vidrio, cartón y prendas de vestir.</li>
+                    <li><strong>Reciclar:</strong> Disponer de forma limpia los desechos finales en puntos ecológicos certificados.</li>
+                </ul>
+                <span class="tag">Modelo de Economía Circular</span>
+            </article>
+
+            <article>
+                <h2>3. Hábitos para un Consumo Ético y Responsable</h2>
+                <p>Recomendaciones para disminuir la huella ecológica personal:</p>
+                <ul>
+                    <li>Evitar el consumo o compra de artículos fabricados con partes de animales silvestres.</li>
+                    <li>Promover el consumo local de marcas comprometidas con empaques compostables o cero plástico.</li>
+                    <li>Apoyar la creación y conservación de áreas naturales protegidas.</li>
+                </ul>
+                <span class="tag">Sostenibilidad</span>
+            </article>
+        </main>
+
+        <aside>
+            <h3>🌱 Conclusión del Proyecto</h3>
+            <p>La conservación de especies y la mitigación de la contaminación dependen de la acción colectiva. Pequeñas modificaciones en el manejo de nuestros residuos generan un impacto significativo a escala global.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Proyecto de Investigación: Regeneración de Vida Animal y Reciclaje.</p>
+    </footer>
+
+</body>
+</html>
