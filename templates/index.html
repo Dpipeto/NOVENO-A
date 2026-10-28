@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Regeneración de Vida Animal y Reciclaje - Inicio{% endblock %}
+
+{% block estilos %}
+<style>
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header p {
+        max-width: 850px;
+    }
+
+    h3 {
+        color: #2d6a4f;
+        margin: 20px 0 10px 0;
+        font-size: 1.15rem;
+    }
+
+    article img, article video {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 15px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .highlight-box {
+        background: #e8f5e9;
+        border-left: 5px solid #40916c;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 4px;
+    }
+</style>
+{% endblock %}
+
+{% block header %}
+<h1>🌱 Regeneración de Vida Animal y Reciclaje</h1>
+<p>La regeneración de la vida animal y el reciclaje son claves para proteger nuestro planeta y construir un futuro más sostenible. A través del cuidado de especies, la conservación de los ecosistemas y el aprovechamiento responsable de los residuos, podemos ayudar a restaurar el equilibrio de la naturaleza y crear conciencia sobre la importancia de cuidar el medio ambiente para las próximas generaciones.</p>
+{% endblock %}
+
+{% block contenido %}
+<article>
+    <h2>¿Cómo el no reciclar llega a afectar a las especies y sus ecosistemas?</h2>
+    <img src="{{ url_for('static', filename='imagenes/01590f363ac1074af1904df42df89e35.jpg') }}" alt="Impacto ambiental de los residuos">
+    <p>Hoy en día, nuestro planeta experimenta constantes transformaciones. Aunque algunas de ellas son naturales, la gran mayoría son provocadas por los seres humanos como el aceleramiento del calentamiento global, poniendo en peligro la supervivencia de los animales y sus hábitats.</p>
+    <span class="tag">Conciencia Ambiental</span>
+</article>
+
+<article>
+    <h2>¿Cómo las acciones humanas afectan a las especies?</h2>
+    <video controls>
+        <source src="{{ url_for('static', filename='video/animales-en-peligro-de-extincion.mp4') }}" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+    <p>Este video expone de manera concisa y didáctica la crisis actual que afecta a miles de especies animales amenazadas por la influencia humana, destacando la gravedad del declive de la biodiversidad y el equilibrio de los ecosistemas. El contenido no solo subraya causas concretas como la caza furtiva y la deforestación, sino que también ejemplifica las consecuencias usando especies emblemáticas. Finalmente, ofrece una visión integral de los esfuerzos de conservación y la responsabilidad colectiva en la protección de la vida silvestre.</p>
+
+    <div class="highlight-box">
+        <h3>Caso de Estudio: "Ejemplo de animales afectados por la contaminación"</h3>
+        <img src="{{ url_for('static', filename='imagenes/vauitas.webp') }}" alt="Vaquita Marina en peligro de extinción">
+        <p>La <strong>vaquita marina</strong> es un pequeño animal marino de México que está a punto de desaparecer, pues quedan menos de 10 ejemplares en todo el mundo. El gran problema son las malas acciones de los humanos, quienes tiran basura al mar y dejan abandonadas sus redes de pesca; estos residuos contaminan su hogar y hacen que las vaquitas se enreden en ellos por accidente, provocando que se ahoguen y muera su especie, haciéndola llegar al punto crítico de la extinción.</p>
+    </div>
+    <span class="tag">Análisis e Investigación</span>
+</article>
+{% endblock %}
+
+{% block aside %}
+<h3>🎯 Objetivo del Proyecto</h3>
+<p>Promover en los estudiantes de grado 8° del colegio SJC la conciencia sobre la importancia de la regeneración y la conservación de las especies, fomentando prácticas ambientales como el reciclaje para contribuir a la protección de la vida, la biodiversidad y evitar la extinción de especies en la actualidad.</p>
+{% endblock %}

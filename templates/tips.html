@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}Acciones Ciudadanas y Soluciones{% endblock %}
+
+{% block estilos %}
+<style>
+    header {
+        background: linear-gradient(135deg, #2d6a4f, #40916c);
+    }
+
+    header p {
+        color: #e8f5e9;
+    }
+
+    .grid-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .step-card {
+        background: #f8fbf9;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 4px solid #52b788;
+    }
+
+    .step-card h4 {
+        color: #1b4332;
+        margin-bottom: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block header %}
+<h1>🛠️ Acciones Ciudadanas y Compromiso</h1>
+<p>Estrategias prácticas de gestión ambiental y consumo responsable aplicables a la vida cotidiana.</p>
+{% endblock %}
+
+{% block contenido %}
+<article>
+    <h2>1. Clasificación Correcta de Residuos Domésticos</h2>
+    <p>La segregación en la fuente es fundamental para garantizar que el material pueda reincorporarse a las cadenas productivas:</p>
+    <div class="grid-steps">
+        <div class="step-card">
+            <h4>🟢 Orgánicos</h4>
+            <p>Residuos de alimentos y jardinería listos para compostaje.</p>
+        </div>
+        <div class="step-card">
+            <h4>🔵 Papel y Cartón</h4>
+            <p>Cajas y cuadernos limpios y secos para su procesamiento.</p>
+        </div>
+        <div class="step-card">
+            <h4>🟡 Plásticos y Envases</h4>
+            <p>Botellas PET y latas metálicas previamente enjuagadas.</p>
+        </div>
+    </div>
+    <span class="tag">Separación de Residuos</span>
+</article>
+
+<article>
+    <h2>2. Aplicación Completa del Principio de las 3R</h2>
+    <p>Optimización del ciclo de vida de los insumos de consumo habitual:</p>
+    <ul>
+        <li><strong>Reducir:</strong> Minimizar el uso de plásticos de un solo uso y embalajes innecesarios.</li>
+        <li><strong>Reutilizar:</strong> Dar una segunda vida útil a contenedores de vidrio, cartón y prendas de vestir.</li>
+        <li><strong>Reciclar:</strong> Disponer de forma limpia los desechos finales en puntos ecológicos certificados.</li>
+    </ul>
+    <span class="tag">Modelo de Economía Circular</span>
+</article>
+
+<article>
+    <h2>3. Hábitos para un Consumo Ético y Responsable</h2>
+    <p>Recomendaciones para disminuir la huella ecológica personal:</p>
+    <ul>
+        <li>Evitar el consumo o compra de artículos fabricados con partes de animales silvestres.</li>
+        <li>Promover el consumo local de marcas comprometidas con empaques compostables o cero plástico.</li>
+        <li>Apoyar la creación y conservación de áreas naturales protegidas.</li>
+    </ul>
+    <span class="tag">Sostenibilidad</span>
+</article>
+{% endblock %}
+
+{% block aside %}
+<h3>🌱 Conclusión del Proyecto</h3>
+<p>La conservación de especies y la mitigación de la contaminación dependen de la acción colectiva. Pequeñas modificaciones en el manejo de nuestros residuos generan un impacto significativo a escala global.</p>
+{% endblock %}

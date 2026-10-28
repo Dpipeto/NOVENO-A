@@ -1,0 +1,139 @@
+/* Estilos compartidos por todas las páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f2f7f4;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #0d2818, #1b4332);
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 1.05rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #d8f3dc;
+}
+
+nav {
+    background-color: #2d6a4f;
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 3px;
+}
+
+nav a:hover, nav a.active {
+    color: #b7e4c7;
+    border-bottom: 2px solid #b7e4c7;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 25px;
+}
+
+main {
+    flex: 3;
+    min-width: 300px;
+}
+
+aside {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border-top: 5px solid #52b788;
+    height: fit-content;
+}
+
+aside h3 {
+    color: #1b4332;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+article {
+    background: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-3px);
+}
+
+h2 {
+    color: #1b4332;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #e9f5ec;
+    padding-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: #2d6a4f;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 14px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    background: #0d2818;
+    color: #b7e4c7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    {% block estilos %}{% endblock %}
+</head>
+<body>
+
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+
+    {% set paginas = [
+        ('index', 'Inicio'),
+        ('justificacion', 'Justificación'),
+        ('crisisdeextincion', 'Marco Teórico'),
+        ('reciclaje', 'Marco Conceptual'),
+        ('tips', '¿Cómo Ayudar?'),
+    ] %}
+    <nav>
+        {% for endpoint, nombre in paginas %}
+        <a href="{{ url_for(endpoint) }}"{% if request.endpoint == endpoint %} class="active"{% endif %}>{{ nombre }}</a>
+        {% endfor %}
+    </nav>
+
+    <div class="container">
+        <main>
+            {% block contenido %}{% endblock %}
+        </main>
+
+        <aside>
+            {% block aside %}{% endblock %}
+        </aside>
+    </div>
+
+    <footer>
+        <p>© Proyecto de Investigación: Regeneración de Vida Animal y Reciclaje.</p>
+    </footer>
+
+</body>
+</html>
